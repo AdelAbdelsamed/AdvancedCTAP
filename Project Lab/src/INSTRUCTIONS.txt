@@ -1,0 +1,24 @@
+1. run lab_start.m in ..src\ 
+2. You will get a warning that no hardware is detected. Program can only run in simulation mode
+3. Initially a minphase setup is used. Change this in SimPara.m (same folder as lab_start.m)
+
+# Manual control
+1. With controller setting set to Manual
+2. Adjust input_1 and input_2
+3. Start simulation in System Settings (top left corner). 
+   Here you can also adjust simulation speed. 
+   
+# Feedback control
+1. Change controller setting to Feedback
+2. Click "Select Controller Directory" and find the folder where your regulators are stored.
+   An example "regX.mat" stored in the same folder as lab_start.m.
+3. Enter a controller, e.g. regGlover.mat. 
+   Controllers are saved as mat file using "save test.mat A B C D"
+4. Click load controller. If controller is found a green light appears.
+5. Now you can adjust the references.
+6. Stabilize the system around 30-40% and then try changing the references + (-) 5%
+
+# Save data
+1. Select folder to save in
+2. Choose name and time span of output.
+3. Click save data. A file name.mat it created with vectors all vectors 
